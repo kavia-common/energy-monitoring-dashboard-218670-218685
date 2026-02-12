@@ -1,13 +1,57 @@
+/* Global baseline (retro terminal + neon accents) */
+:root {
+  --bg: #090a0f;
+  --panel: #0e1020;
+  --panel-2: #0b0c16;
+  --border: rgba(80, 255, 199, 0.18);
+  --text: rgba(227, 255, 245, 0.92);
+  --text-dim: rgba(227, 255, 245, 0.7);
+  --muted: rgba(227, 255, 245, 0.55);
+
+  --neon-cyan: #22f1c3;
+  --neon-pink: #ff4fd8;
+  --neon-blue: #53a7ff;
+  --neon-yellow: #ffe36a;
+
+  --danger: #ff4d6d;
+  --warn: #ffe36a;
+  --ok: #22f1c3;
+
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  --radius: 14px;
+
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: radial-gradient(900px 500px at 20% 10%, rgba(83, 167, 255, 0.15), transparent 55%),
+    radial-gradient(700px 450px at 80% 20%, rgba(255, 79, 216, 0.12), transparent 55%),
+    radial-gradient(800px 500px at 30% 90%, rgba(34, 241, 195, 0.12), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  color: inherit;
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--font-mono);
 }
