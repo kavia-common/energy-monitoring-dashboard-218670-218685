@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/energy-monitoring-dashboard-218670-218685/energy_monitor_frontend"
+}
